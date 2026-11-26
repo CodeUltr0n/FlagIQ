@@ -718,6 +718,7 @@ HTML_PAGE = """<!DOCTYPE html>
               <select id="preset-select" name="preset">
                 <option value="">-- Custom ticket --</option>
               </select>
+              <span id="preset-hint" class="hint">Loading sample tickets…</span>
             </div>
             <div class="form-group">
               <label for="issue-id">Issue Identity (Flagsmith Identifier) <span aria-hidden="true">*</span></label>
@@ -895,13 +896,24 @@ HTML_PAGE = """<!DOCTYPE html>
       ]);
       presets = await presetRes.json();
       const select = document.getElementById('preset-select');
+      const hint = document.getElementById('preset-hint');
       presets.slice(0, 25).forEach((p, idx) => {
         const opt = document.createElement('option');
         opt.value = String(idx);
         opt.textContent = `${p.identity} — ${p.title.slice(0, 55)}`;
         select.appendChild(opt);
       });
-      if (presets.length > 0) fillPreset(presets[0]);
+      if (presets.length > 0) {
+        select.value = '0';
+        fillPreset(presets[0]);
+        if (hint) {
+          hint.textContent = presets.length <= 5
+            ? `Showing ${presets.length} built-in sample tickets (cloud preview; 379-issue benchmark dataset is gitignored).`
+            : `Showing top ${Math.min(25, presets.length)} of ${presets.length} screened historical issues.`;
+        }
+      } else if (hint) {
+        hint.textContent = 'Enter a custom ticket below.';
+      }
 
       latestMetrics = await metricsRes.json();
       renderMetrics(latestMetrics);
@@ -949,6 +961,7 @@ HTML_PAGE = """<!DOCTYPE html>
 
     // 1-Click Judge Demo Scenarios (isolated under demo/ namespace)
     document.getElementById('demo-ambiguous').addEventListener('click', () => {
+      document.getElementById('preset-select').value = '';
       fillPreset({
         identity: 'demo/vercel/next.js#402',
         title: 'Build broken after update',
@@ -958,6 +971,7 @@ HTML_PAGE = """<!DOCTYPE html>
     });
 
     document.getElementById('demo-duplicate').addEventListener('click', () => {
+      document.getElementById('preset-select').value = '';
       const peer = presets.length > 0 ? presets[0] : {
         identity: 'python/cpython#101',
         repo: 'python/cpython',
@@ -972,6 +986,7 @@ HTML_PAGE = """<!DOCTYPE html>
     });
 
     document.getElementById('demo-verified').addEventListener('click', () => {
+      document.getElementById('preset-select').value = '';
       fillPreset({
         identity: 'demo/flagsmith/flagsmith#505',
         title: 'TypeError crash when event processor flushes empty batch',
@@ -1014,20 +1029,55 @@ HTML_PAGE = """<!DOCTYPE html>
       });
       out.appendChild(ul);
 
+      const approveBtn = document.getElementById('approve-btn');
+      const rejectBtn = document.getElementById('reject-btn');
+      approveBtn.disabled = false;
+      rejectBtn.disabled = false;
+      approveBtn.textContent = 'Approve — Decision Correct';
+      rejectBtn.textContent = 'Override — Wrong Decision';
+      const status = document.getElementById('feedback-status');
+      status.className = 'hint';
+      status.textContent = '';
       document.getElementById('human-gate').hidden = false;
-      document.getElementById('feedback-status').textContent = '';
     }
 
     async function sendFeedback(isCorrect) {
-      if (!lastTriage) return;
       const status = document.getElementById('feedback-status');
-      const res = await fetch('/api/feedback', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ identity: lastTriage.identity, correct: isCorrect }),
-      });
-      const data = await res.json();
-      status.textContent = data.message;
+      const approveBtn = document.getElementById('approve-btn');
+      const rejectBtn = document.getElementById('reject-btn');
+      if (!lastTriage) {
+        status.className = 'callout callout-bad';
+        status.textContent = 'Run "Evaluate via Flagsmith Flag" first before recording human review.';
+        return;
+      }
+      approveBtn.disabled = true;
+      rejectBtn.disabled = true;
+      status.className = 'callout';
+      status.textContent = 'Recording isolated review…';
+      try {
+        const res = await fetch('/api/feedback', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ identity: lastTriage.identity, correct: isCorrect }),
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        status.className = isCorrect ? 'callout' : 'callout callout-bad';
+        status.textContent = data.message;
+        if (isCorrect) {
+          approveBtn.textContent = '✓ Approved (Logged)';
+          rejectBtn.textContent = 'Override — Wrong Decision';
+        } else {
+          rejectBtn.textContent = '✓ Overridden (Logged)';
+          approveBtn.textContent = 'Approve — Decision Correct';
+        }
+      } catch (err) {
+        status.className = 'callout callout-bad';
+        status.textContent = `Could not record feedback: ${err.message}`;
+      } finally {
+        approveBtn.disabled = false;
+        rejectBtn.disabled = false;
+      }
     }
 
     document.getElementById('approve-btn').addEventListener('click', () => sendFeedback(true));
@@ -1130,7 +1180,7 @@ HTML_PAGE = """<!DOCTYPE html>
         : 'Flagsmith: Offline Simulation Mode';
 
       document.getElementById('exp-source-label').textContent =
-        `${m.source} · Evaluated historical issues: ${m.total} (target ${m.target_issues}; ${m.quarantined_unknown} ambiguous/bot/stale/not_planned quarantined as UNKNOWN)`;
+        `${m.source} · Displayed issues: ${m.total} (benchmark target ${m.target_issues}; ${m.quarantined_unknown} ambiguous/bot/stale/not_planned quarantined as UNKNOWN)`;
 
       const bPanel = document.getElementById('bayesian-panel');
       clearEl(bPanel);
