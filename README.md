@@ -76,22 +76,22 @@ flowchart TD
 
 ## Experiment Results & Reconciliation (Nov 26 Run)
 
-### 1. Flagsmith Cloud ↔ Local Reconciliation (`As of 26 Nov 2026, 12:38 UTC`)
+### 1. Flagsmith Cloud ↔ Local Reconciliation (`As of 26 Nov 2026, 13:41 UTC`)
 ![Flagsmith Cloud Win Probability Panel](assets/win_probability.png)
 
-> **Flagsmith Cloud Hypothesis Text Note:** The running Flagsmith Cloud banner retains the initial pre-run wording (*"...reduces false escalations... on 400 real GitHub issues"*). The live experiment was preserved untouched without resetting or restarting; actual evaluation covers **379 screened historical issues** on primary metric `decision_correct` governed by FlagIQ safety gates (`ROLLBACK_SAFETY`).
+> **Reconciliation Note:** The running Flagsmith Cloud total (`385`) reflects the **`379` screened historical issues** plus **`5` pre-run smoke probes (`smoke/check#1..5`)** plus **`1` interactive UI test exposure (`demo/...`)** verified via `app.py` (`+1` `Variant_1` exposure, `0` `decision_correct` conversions because interactive `demo/` checks never emit benchmark conversions). The Cloud Hypothesis was updated cleanly in-place without resetting experiment data. *(Note: the earlier screenshot above was captured at `12:38 UTC` with `384` enrolled before the hypothesis edit and interactive UI test.)*
 
-| Arm | Screened Historical Dataset (`379` issues) | Pre-Run Smoke (`smoke/check#1..5`) | Expected Flagsmith Total | Flagsmith Cloud UI |
+| Arm | Screened Historical Dataset (`379` issues) | Smoke (`smoke/check#1..5`) + `1` UI Demo | Expected Flagsmith Total | Flagsmith Cloud UI |
 |---|---|---|---|---|
-| `answer_first` (`Control`) | `39 / 189` (`20.6%`) | `+1` exposure, `+1` conversion | `190` (`21.05%`) | **`190`** exposures, **`21.1%`** Occ. Rate |
-| `clarify_first` (`Variant_1`) | `58 / 190` (`30.5%`) | `+4` exposures, `+2` conversions | `194` (`30.93%`) | **`194`** exposures, **`30.9%`** Occ. Rate |
-| **Combined** | `97 / 379` | `+5` exposures, `+3` conversions | **`384`** enrolled | **`384`** enrolled, **`+46.9%`** lift, **`96%`** win prob |
+| `answer_first` (`Control`) | `39 / 189` (`20.6%`) | `+1` exp, `+1` conv | `190` (`21.05%`) | **`190`** exposures, **`21.1%`** Occ. Rate |
+| `clarify_first` (`Variant_1`) | `58 / 190` (`30.5%`) | `+5` exp (`4` smoke + `1` `demo/`), `+2` conv | `195` (`30.77%`) | **`195`** exposures, **`30.8%`** Occ. Rate |
+| **Combined** | `97 / 379` | `+6` exp, `+3` conv | **`385`** enrolled | **`385`** enrolled, **`+46.2%`** lift, **`96%`** win prob |
 
 ### 2. Three Strictly Separated Decisions
 ![FlagIQ Dashboard Verdict and Modeled ROI](assets/flagiq_dashboard_verdict_roi.png)
 
 1. **Statistical Accuracy Winner — `clarify_first` (`30.5%` vs `20.6%`):**
-   - Local Beta-Binomial **`P(clarify_first > answer_first) = 98.6%`** (`+9.9pp`, `+47.9%` relative lift; 95% CIs `[15.4%, 26.9%]` vs `[24.4%, 37.4%]`; Flagsmith Cloud `96%`, CI `[-4.1%, 97.9%]`).
+   - Local Beta-Binomial **`P(clarify_first > answer_first) = 98.6%`** (`+9.9pp`, `+47.9%` relative lift; 95% CIs `[15.4%, 26.9%]` vs `[24.4%, 37.4%]`; Flagsmith Cloud `96%`, CI `[-4.6%, 96.9%]`).
 2. **Modeled Economic Preference — `clarify_first` (`-$12.53` vs `-$15.66`/ticket modeled):**
    - Net modeled values on the 379-issue benchmark are **`-$2,960` / `189` tickets** (`answer_first`) vs **`-$2,380` / `190` tickets** (`clarify_first`), a `+$3.13/issue` relative margin → **`Projected relative economic advantage: $6,260/month`** at `2,000` issues/month under configured cost assumptions (`$45` FE, `$25` FA, `$15` correct). **This is a modeled projection, not verified operational savings, and not a deployment recommendation.**
 3. **Actual Safety & Deployment Decision — `ROLLBACK_SAFETY` (`BLOCKED`):**
@@ -141,7 +141,7 @@ All **five** repository-exclusion folds independently fail safety eligibility (`
 1. **Strict `UNKNOWN` Exclusion ([`scripts/scrape_github_issues.py`](scripts/scrape_github_issues.py)):** Checks `merged_at` strictly on PRs, quarantines `stale[bot]` / `not_planned` / unmerged closures to `excluded_unknown.json` (`447` excluded), and exports `audit_sample_50.json` for spot-checking.
 2. **LOO Sample Floor ([`flagiq/bayesian.py`](flagiq/bayesian.py)):** Each 4-repo LOO fold applies a configured equal-weight floor of `n >= 80/arm` (`int(100 × (K - 1)/K)`); our `379`-issue screened dataset yields `136–162/arm` per fold, clearing `80/arm` across all 5 folds.
 3. **Demo vs. Benchmark Isolation ([`app.py#L1345`](app.py#L1345)):** Interactive UI clicks force `demo/` identifiers and emit `"demo_human_approval"` separately so judge tests never pollute `"decision_correct"`.
-4. **Crash Recovery & Reconciliation ([`scripts/run_experiment.py`](scripts/run_experiment.py)):** `--resume` commits `results.json` atomically before `processed.json`; remote `$flag_exposure` delivery is at-least-once on hard `SIGKILL` before disk commit and reconciled post-run against Flagsmith Cloud counts (`379` benchmark + `5` smoke probes = `384`).
+4. **Crash Recovery & Reconciliation ([`scripts/run_experiment.py`](scripts/run_experiment.py)):** `--resume` commits `results.json` atomically before `processed.json`; remote `$flag_exposure` delivery is at-least-once on hard `SIGKILL` before disk commit and reconciled post-run against Flagsmith Cloud counts (`379` benchmark + `5` smoke probes + `1` UI `demo/` evaluation = `385`).
 
 ---
 
