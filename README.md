@@ -28,8 +28,69 @@ bash setup.sh                                    # 1. Create .venv, install requ
 | Occurrence conversion event | [`scripts/run_experiment.py#L228`](scripts/run_experiment.py#L228) | `fs.track_event("decision_correct", identifier=identity)` emitted **only** on benchmark matches (`result.correct == True`) |
 | Isolated demo human approval | [`app.py#L1404`](app.py#L1404) | Interactive `demo/` evaluations emit `"demo_human_approval"` separately — never contaminating `"decision_correct"` |
 | Explicit event buffer flush | [`app.py#L1406`](app.py#L1406), [`scripts/run_experiment.py#L401`](scripts/run_experiment.py#L401) | `fs.flush_events()` drains buffered events before exit (`enable_events=True`) |
-| Blind decision & outcome boundary | [`flagiq/decision.py#L198`](flagiq/decision.py#L198), [`flagiq/decision.py#L226`](flagiq/decision.py#L226) | `decision` locks strictly from creation-time signals before `real_resolution` or post-close fields are accessed |
+| Blind decision & outcome boundary | [`flagiq/decision.py#L196`](flagiq/decision.py#L196), [`flagiq/decision.py#L226`](flagiq/decision.py#L226) | `decision` locks strictly from creation-time signals before `real_resolution` or post-close fields are accessed |
 | Deployment Eligibility Gate | [`flagiq/bayesian.py#L190`](flagiq/bayesian.py#L190), [`app.py#L185`](app.py#L185) | Separates Deployment Decision (`ROLLBACK_SAFETY` priority), Statistical Winner, Modeled Economic Preference, and 5-fold LOO checks |
+
+---
+
+## FlagIQ × Flagsmith Architecture
+
+```mermaid
+flowchart TD
+    subgraph Sources["1. Incoming Tickets (Isolated Execution Paths)"]
+        HIST["1a. Historical Benchmark Replay<br/>379 Screened Closed GitHub Issues<br/>(Replay IDs — Not Live Users)"]
+        DEMO["1b. Interactive Demo Ticket (UI)<br/>demo/ Isolated Namespace"]
+    end
+
+    subgraph FlagsmithCloud["Flagsmith Cloud — Experiment Assignment & Event Telemetry"]
+        FLAG["2. Flagsmith Flag Lookup<br/>get_experiment_flag('triage_strategy')<br/>Logs $flag_exposure"]
+        VAR_A["3a. Control<br/>answer_first"]
+        VAR_B["3b. Variant (Variant_1)<br/>clarify_first"]
+        CONV["7a. Flagsmith Conversion Event<br/>track_event('decision_correct')<br/>Benchmark Matches Only"]
+        DEMO_EV["7b. Flagsmith Demo Audit Event<br/>track_event('demo_human_approval')<br/>Isolated Interactive UI Only"]
+    end
+
+    subgraph FlagIQPlatform["FlagIQ Platform — Decision Policy, Bayesian Analysis & Safety Gate"]
+        DEC["4. FlagIQ Decision Engine<br/>Executes Assigned Policy Thresholds<br/>(config/policy.yaml)"]
+        EVID["5. Blind Evidence Extraction & Evaluation<br/>Creation-Time Text Signals Only<br/>(Decision Locked at decision.py L196)"]
+        GATE["6. Human Review Gate<br/>Approve / Override Decision<br/>(Interactive Demo Triage Only)"]
+        RESULTS["Local Benchmark Results Log<br/>fixtures/real_issues/results.json"]
+        BAYES["8. FlagIQ Bayesian Analyzer<br/>Beta-Binomial P(best), 95% CI & Modeled ROI<br/>(flagiq/bayesian.py)"]
+        SAFE["9. Independent Safety Guardrails<br/>Max 20% false_answer Cap, Sample Floor,<br/>5-Fold Leave-One-Repo-Out (LOO)"]
+        VERDICT["10. Final Deployment Verdict<br/>SHIP_WINNER | GATHER_MORE_DATA | ROLLBACK_SAFETY"]
+    end
+
+    HIST -->|"Benchmark replay"| FLAG
+    DEMO -->|"Live UI check"| FLAG
+    FLAG --> VAR_A
+    FLAG --> VAR_B
+    VAR_A --> DEC
+    VAR_B --> DEC
+    DEC --> EVID
+    EVID -->|"Benchmark match (correct == True)"| CONV
+    EVID -->|"All 379 benchmark outcomes"| RESULTS
+    EVID -->|"Interactive demo ticket"| GATE
+    GATE -->|"Approve (isolated demo/)"| DEMO_EV
+    RESULTS --> BAYES
+    RESULTS --> SAFE
+    BAYES --> VERDICT
+    SAFE -->|"Safety overrides accuracy winner"| VERDICT
+
+    classDef flagsmith fill:#eef2ff,stroke:#4f46e5,stroke-width:2px,color:#1e1b4b
+    classDef flagiq fill:#f0fdf4,stroke:#15803d,stroke-width:2px,color:#14532d
+    classDef source fill:#f8fafc,stroke:#475569,stroke-width:1.5px,color:#0f172a
+    classDef verdict fill:#fef2f2,stroke:#b91c1c,stroke-width:2px,color:#7f1d1d
+
+    class FLAG,VAR_A,VAR_B,CONV,DEMO_EV flagsmith
+    class DEC,EVID,GATE,RESULTS,BAYES,SAFE flagiq
+    class HIST,DEMO source
+    class VERDICT verdict
+```
+
+Flagsmith controls experiment assignment and captures exposure and conversion events. FlagIQ executes the competing triage strategies, evaluates experimental outcomes, performs Bayesian analysis and applies independent safety guardrails before recommending deployment.
+
+- **Flagsmith Cloud Responsibilities:** Serves randomized multivariate `triage_strategy` assignments (`Control: answer_first`, `Variant: clarify_first`), logs `$flag_exposure`, and captures `"decision_correct"` (`occurrence` metric on historical benchmark matches only) alongside isolated `"demo_human_approval"` UI audit events.
+- **FlagIQ Platform Responsibilities:** Enforces zero post-close leakage (`flagiq/decision.py`), keeps interactive UI human approvals (`demo/` + Step 6 Human Review Gate) strictly isolated from the 379-issue historical benchmark replay (`scripts/run_experiment.py`), computes Beta-Binomial posteriors and modeled economics (`flagiq/bayesian.py`), and enforces independent safety guardrails (`ROLLBACK_SAFETY` when `false_answer > 20%`).
 
 ---
 
@@ -59,18 +120,6 @@ Built for **open-source maintainers and on-call engineering leads** managing noi
 - **False Answers (`$25/ticket` modeled assumption):** Guessing on unresolved bugs without reproduction proof misleads users and erodes trust.
 
 FlagIQ puts **fast-deflection (`answer_first`)** and **evidence-gated (`clarify_first` — refuse to guess without stack traces/repro proof)** behind Flagsmith's multivariate `triage_strategy` flag across **379 screened historical GitHub issues** (`400`-issue target; **`447`** ambiguous closures excluded as `UNKNOWN`), separating statistical accuracy from deployment safety.
-
-```mermaid
-flowchart TD
-    A["GitHub REST API (5 Repos)"] --> B["scripts/scrape_github_issues.py (379 Screened + 447 UNKNOWN Excluded)"]
-    B --> C["app.py (Isolated demo/ UI + Human Gate)"]
-    B --> D["scripts/run_experiment.py (379 Screened Historical Issues)"]
-    C -->|"get_experiment_flag(demo/...)"| E["Flagsmith Cloud Engine"]
-    D -->|"get_experiment_flag(repo#number)"| E
-    E --> F["flagiq/decision.py (Zero-Leakage & Temporal Isolation)"]
-    F -->|"Match -> track_event(decision_correct)"| E
-    E -->|"Bayesian win_probability"| G["flagiq/bayesian.py (Safety Gate: SHIP / GATHER / ROLLBACK)"]
-```
 
 ---
 
@@ -109,7 +158,7 @@ All **five** repository-exclusion folds independently fail safety eligibility (`
 ### 4. Stratified Complexity Results & Human Audit Caveats
 ![FlagIQ Experimental Validity and Audit Warning](assets/flagiq_experimental_validity.png)
 
-- **Six automated validity checks pass** ([`scripts/validate_experiment.py`](scripts/validate_experiment.py)): consistent identity hashing, covariate balance, blind evaluation (`decision` locked at [`flagiq/decision.py#L198`](flagiq/decision.py#L198) before post-close access at [`L226`](flagiq/decision.py#L226)), confidence blindness, reproducibility, and temporal peer isolation (`peer.created_at < issue.created_at`) + `UNKNOWN` exclusion. **Passing these checks does not imply perfect ground truth.**
+- **Six automated validity checks pass** ([`scripts/validate_experiment.py`](scripts/validate_experiment.py)): consistent identity hashing, covariate balance, blind evaluation (`decision` locked at [`flagiq/decision.py#L196`](flagiq/decision.py#L196) before post-close access at [`L226`](flagiq/decision.py#L226)), confidence blindness, reproducibility, and temporal peer isolation (`peer.created_at < issue.created_at`) + `UNKNOWN` exclusion. **Passing these checks does not imply perfect ground truth.**
 - **50-Ticket Stratified Human Audit Breakdown:** **`42/50` (`84%`) strict agreement overall** — `ESCALATE` **`36/37`**, `DUPLICATE` **`3/3`**, **`ANSWER` `3/10` strictly confirmed**.
 - **Creation-Time Complexity Quartiles (`app.py` Q1–Q4):**
   - `Q1 (Low Context)`: `answer_first` **`23.3% (n=73)`** vs `clarify_first` **`14.6% (n=96)`** *(reverses overall accuracy ranking)*
