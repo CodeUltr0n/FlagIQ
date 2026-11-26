@@ -1,0 +1,36 @@
+# Environment
+.env
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Data (don't commit scraped issues — too large)
+fixtures/real_issues/issues.json
+fixtures/real_issues/results.json
+fixtures/real_issues/processed.json
+fixtures/real_issues/excluded_unknown.json
+fixtures/real_issues/audit_sample_50.json
+fixtures/real_issues/calibration_issues.json
+fixtures/real_issues/demo_feedback.json
+fixtures/real_issues/validity_report.json
+
+# Keep the placeholder
+!fixtures/real_issues/.gitkeep
+!assets/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local hackathon prep notes (keep local; don't expose pre-event dates in public repo)
+EXECUTION_PLAN.md
+JUDGE_QA.md
+OFFICIAL_FLAGSMITH_SETUP.md
+VIDEO_SCRIPT.md
+*.pdf
+

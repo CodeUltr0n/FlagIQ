@@ -1,0 +1,43 @@
+# FlagIQ — Strategy Configuration
+# Defines two competing deterministic evidence-driven triage policies tested via Flagsmith.
+# Do NOT modify thresholds after locking the held-out experiment run.
+
+strategies:
+  answer_first:
+    description: "Fast-deflection policy: answer whenever moderate context exists; only escalate severe crashes."
+    answer_threshold: 0.35       # low bar to attempt ANSWER directly
+    duplicate_threshold: 0.45    # token Jaccard similarity >= 0.45 -> DUPLICATE
+    escalate_bug_threshold: 0.78 # requires very strong bug+repro evidence to escalate
+    clarify_max_confidence: 0.15 # only asks clarifying questions if nearly empty
+
+  clarify_first:
+    description: "Evidence-gated ('Never Guess') policy: refuse to guess without repro proof; escalate verified bugs."
+    answer_threshold: 0.55       # higher evidence bar before attempting ANSWER
+    duplicate_threshold: 0.45    # same duplicate threshold
+    escalate_bug_threshold: 0.50 # verified bug + repro signature -> ESCALATE
+    clarify_max_confidence: 0.40 # asks clarifying questions when repro evidence is incomplete
+
+cost_model:
+  false_escalation_usd: 45.0     # wasted senior engineer triage time per unnecessary escalation
+  false_answer_usd: 25.0         # wasted user/maintainer round-trip + wrong guidance
+  correct_decision_usd: 15.0     # engineering time saved when correctly routed
+  engineer_hourly_rate_usd: 90.0 # loaded senior engineer rate for monthly ROI estimates
+
+eligibility_gate:
+  win_probability_threshold: 0.90
+  min_sample_per_arm: 100
+  min_practical_lift: 0.03       # >= 3.0 percentage points minimum accuracy improvement
+  max_false_answer_rate: 0.20
+  max_false_escalation_rate: 0.35
+  require_loo_robust: true       # winner must survive Leave-One-Repo-Out sensitivity
+
+experiment:
+  flag_name: triage_strategy
+  metric_event: decision_correct
+  auxiliary_events:
+    - false_escalation
+    - false_answer
+  total_identities: 400
+  split: 50_50
+  win_probability_threshold: 0.90
+  identity_format: "{repo}#{issue_number}"

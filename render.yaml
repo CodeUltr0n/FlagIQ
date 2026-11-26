@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: flagiq-experiment-lab
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 app.py
+    envVars:
+      - key: FLAGSMITH_FLAG_NAME
+        value: triage_strategy
+      - key: FLAGSMITH_VARIANT_A
+        value: answer_first
+      - key: FLAGSMITH_VARIANT_B
+        value: clarify_first
+      - key: FLAGSMITH_ENV_KEY
+        sync: false
