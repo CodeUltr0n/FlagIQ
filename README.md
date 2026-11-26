@@ -26,8 +26,8 @@ bash setup.sh                                    # 1. Create .venv, install requ
 |---|---|---|
 | Live experiment flag & exposure | [`app.py#L120`](app.py#L120), [`scripts/run_experiment.py#L201`](scripts/run_experiment.py#L201) | `fs.get_experiment_flag("triage_strategy", identifier=identity)` assigns variant & records `$flag_exposure` |
 | Occurrence conversion event | [`scripts/run_experiment.py#L228`](scripts/run_experiment.py#L228) | `fs.track_event("decision_correct", identifier=identity)` emitted **only** on benchmark matches (`result.correct == True`) |
-| Isolated demo human approval | [`app.py#L1395`](app.py#L1395) | Interactive `demo/` evaluations emit `"demo_human_approval"` separately — never contaminating `"decision_correct"` |
-| Explicit event buffer flush | [`app.py#L1397`](app.py#L1397), [`scripts/run_experiment.py#L401`](scripts/run_experiment.py#L401) | `fs.flush_events()` drains buffered events before exit (`enable_events=True`) |
+| Isolated demo human approval | [`app.py#L1404`](app.py#L1404) | Interactive `demo/` evaluations emit `"demo_human_approval"` separately — never contaminating `"decision_correct"` |
+| Explicit event buffer flush | [`app.py#L1406`](app.py#L1406), [`scripts/run_experiment.py#L401`](scripts/run_experiment.py#L401) | `fs.flush_events()` drains buffered events before exit (`enable_events=True`) |
 | Blind decision & outcome boundary | [`flagiq/decision.py#L198`](flagiq/decision.py#L198), [`flagiq/decision.py#L226`](flagiq/decision.py#L226) | `decision` locks strictly from creation-time signals before `real_resolution` or post-close fields are accessed |
 | Deployment Eligibility Gate | [`flagiq/bayesian.py#L190`](flagiq/bayesian.py#L190), [`app.py#L185`](app.py#L185) | Separates Deployment Decision (`ROLLBACK_SAFETY` priority), Statistical Winner, Modeled Economic Preference, and 5-fold LOO checks |
 
@@ -140,7 +140,7 @@ All **five** repository-exclusion folds independently fail safety eligibility (`
 
 1. **Strict `UNKNOWN` Exclusion ([`scripts/scrape_github_issues.py`](scripts/scrape_github_issues.py)):** Checks `merged_at` strictly on PRs, quarantines `stale[bot]` / `not_planned` / unmerged closures to `excluded_unknown.json` (`447` excluded), and exports `audit_sample_50.json` for spot-checking.
 2. **LOO Sample Floor ([`flagiq/bayesian.py`](flagiq/bayesian.py)):** Each 4-repo LOO fold applies a configured equal-weight floor of `n >= 80/arm` (`int(100 × (K - 1)/K)`); our `379`-issue screened dataset yields `136–162/arm` per fold, clearing `80/arm` across all 5 folds.
-3. **Demo vs. Benchmark Isolation ([`app.py#L1395`](app.py#L1395)):** Interactive UI clicks force `demo/` identifiers and emit `"demo_human_approval"` separately so judge tests never pollute `"decision_correct"`.
+3. **Demo vs. Benchmark Isolation ([`app.py#L1404`](app.py#L1404)):** Interactive UI clicks force `demo/` identifiers and emit `"demo_human_approval"` separately so judge tests never pollute `"decision_correct"`.
 4. **Crash Recovery & Reconciliation ([`scripts/run_experiment.py`](scripts/run_experiment.py)):** `--resume` commits `results.json` atomically before `processed.json`; remote `$flag_exposure` delivery is at-least-once on hard `SIGKILL` before disk commit and reconciled post-run against Flagsmith Cloud counts (`379` benchmark + `5` smoke probes + `1` UI `demo/` evaluation = `385`).
 
 ---

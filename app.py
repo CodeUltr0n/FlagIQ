@@ -927,7 +927,12 @@ HTML_PAGE = """<!DOCTYPE html>
     }
 
     document.getElementById('preset-select').addEventListener('change', (e) => {
-      if (e.target.value !== '') fillPreset(presets[Number(e.target.value)]);
+      if (e.target.value !== '') {
+        fillPreset(presets[Number(e.target.value)]);
+      } else {
+        fillPreset({ identity: 'custom/ticket#1', title: '', body: '' });
+        document.getElementById('issue-title').focus();
+      }
     });
 
     async function runTriageEval() {
@@ -1359,7 +1364,11 @@ class FlagIQHandler(BaseHTTPRequestHandler):
             repo = stripped.split("#")[0] if "#" in stripped else "custom/repo"
             issue_num = _parse_issue_number(stripped)
             dataset = _load_dataset()
-            corpus = [IssueReport(**d) for d in dataset]
+            corpus = [
+                IssueReport(**d)
+                for d in dataset
+                if d.get("identity") not in (demo_identity, stripped)
+            ]
             issue = IssueReport(
                 identity=demo_identity,
                 repo=repo,
