@@ -125,7 +125,7 @@ All **five** folds independently fail operational safety eligibility (`47.6%–6
 
 ## Development Timeline & Eligibility Disclosure
 
-Per the official Toggle Wars 2026 FAQ (*"Can I get a head start? Yes, you are explicitly allowed to get a head start and start building your idea with Flagsmith before the hackathon begins"*), initial project scaffolding and deterministic heuristic design were prepared prior to kickoff, while live GitHub dataset scraping, 50-issue human auditing, live Flagsmith Cloud experimentation, statistical reconciliation, deployment, and the 3-minute demo video are executed transparently during the Nov 26–29 hackathon window.
+Per official Toggle Wars 2026 Rule 04 ([`wemakedevs.org/hackathons/flagsmith/rules`](https://www.wemakedevs.org/hackathons/flagsmith/rules), archived in [`assets/hackathon_rules_head_start.png`](assets/hackathon_rules_head_start.png)): *"You can get a head start: try Flagsmith and start building your idea with it before the hackathon begins. That's allowed. Submit by the deadline like everyone else."* Initial project scaffolding and deterministic heuristic design were prepared prior to kickoff, while live GitHub dataset scraping, 50-issue human auditing, live Flagsmith Cloud experimentation, statistical reconciliation, deployment, and the 3-minute demo video are executed transparently during the Nov 26–29 hackathon window.
 
 ---
 
