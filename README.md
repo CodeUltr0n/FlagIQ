@@ -42,21 +42,27 @@ flowchart TD
         DEMO["1b. Interactive Demo Ticket (UI)<br/>demo/ Isolated Namespace"]
     end
 
-    subgraph FlagsmithCloud["Flagsmith Cloud — Experiment Assignment & Event Telemetry"]
+    subgraph FlagsmithAssign["Flagsmith Cloud — Experiment Assignment"]
         FLAG["2. Flagsmith Flag Lookup<br/>get_experiment_flag('triage_strategy')<br/>Logs $flag_exposure"]
         VAR_A["3a. Control<br/>answer_first"]
         VAR_B["3b. Variant (Variant_1)<br/>clarify_first"]
+    end
+
+    subgraph FlagIQTriage["FlagIQ Platform — Policy Execution & Blind Evaluation"]
+        DEC["4. FlagIQ Decision Engine<br/>Executes Assigned Policy Thresholds (config/policy.yaml)"]
+        EVID["5. Evidence Extraction & Decision Evaluation<br/>Creation-Time Signals Only (Locked at decision.py L196)"]
+        GATE["6. Human Approval / Override Gate<br/>Interactive Demo Triage Only (Never All 379 Benchmark Issues)"]
+        RESULTS["Benchmark Outcomes Log<br/>fixtures/real_issues/results.json"]
+    end
+
+    subgraph FlagsmithEvents["Flagsmith Cloud — Conversion & Demo Audit Telemetry"]
         CONV["7a. Flagsmith Conversion Event<br/>track_event('decision_correct')<br/>Benchmark Matches Only"]
         DEMO_EV["7b. Flagsmith Demo Audit Event<br/>track_event('demo_human_approval')<br/>Isolated Interactive UI Only"]
     end
 
-    subgraph FlagIQPlatform["FlagIQ Platform — Decision Policy, Bayesian Analysis & Safety Gate"]
-        DEC["4. FlagIQ Decision Engine<br/>Executes Assigned Policy Thresholds<br/>(config/policy.yaml)"]
-        EVID["5. Blind Evidence Extraction & Evaluation<br/>Creation-Time Text Signals Only<br/>(Decision Locked at decision.py L196)"]
-        GATE["6. Human Review Gate<br/>Approve / Override Decision<br/>(Interactive Demo Triage Only)"]
-        RESULTS["Local Benchmark Results Log<br/>fixtures/real_issues/results.json"]
-        BAYES["8. FlagIQ Bayesian Analyzer<br/>Beta-Binomial P(best), 95% CI & Modeled ROI<br/>(flagiq/bayesian.py)"]
-        SAFE["9. Independent Safety Guardrails<br/>Max 20% false_answer Cap, Sample Floor,<br/>5-Fold Leave-One-Repo-Out (LOO)"]
+    subgraph FlagIQGate["FlagIQ Platform — Bayesian Analysis & Deployment Safety"]
+        BAYES["8. FlagIQ Bayesian Analyzer (flagiq/bayesian.py)<br/>Beta-Binomial P(best), 95% CI & Modeled ROI"]
+        SAFE["9. Independent Safety Guardrails<br/>Max 20% false_answer Cap, Sample Floor & 5-Fold LOO"]
         VERDICT["10. Final Deployment Verdict<br/>SHIP_WINNER | GATHER_MORE_DATA | ROLLBACK_SAFETY"]
     end
 
@@ -77,7 +83,7 @@ flowchart TD
     SAFE -->|"Safety overrides accuracy winner"| VERDICT
 
     classDef flagsmith fill:#eef2ff,stroke:#4f46e5,stroke-width:2px,color:#1e1b4b
-    classDef flagiq fill:#f0fdf4,stroke:#15803d,stroke-width:2px,color:#14532d
+    classDef flagiq fill:#ecfdf5,stroke:#047857,stroke-width:2px,color:#064e3b
     classDef source fill:#f8fafc,stroke:#475569,stroke-width:1.5px,color:#0f172a
     classDef verdict fill:#fef2f2,stroke:#b91c1c,stroke-width:2px,color:#7f1d1d
 
@@ -85,6 +91,12 @@ flowchart TD
     class DEC,EVID,GATE,RESULTS,BAYES,SAFE flagiq
     class HIST,DEMO source
     class VERDICT verdict
+
+    style Sources fill:#f8fafc,stroke:#64748b,stroke-width:1.5px,color:#0f172a
+    style FlagsmithAssign fill:#f5f3ff,stroke:#6d28d9,stroke-width:2px,color:#2e1065
+    style FlagsmithEvents fill:#f5f3ff,stroke:#6d28d9,stroke-width:2px,color:#2e1065
+    style FlagIQTriage fill:#f0fdf4,stroke:#15803d,stroke-width:2px,color:#052e16
+    style FlagIQGate fill:#f0fdf4,stroke:#15803d,stroke-width:2px,color:#052e16
 ```
 
 Flagsmith controls experiment assignment and captures exposure and conversion events. FlagIQ executes the competing triage strategies, evaluates experimental outcomes, performs Bayesian analysis and applies independent safety guardrails before recommending deployment.
