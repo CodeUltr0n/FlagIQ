@@ -233,5 +233,5 @@ bash setup.sh                                         # installs dependencies in
 ---
 
 ## Builder
-**Ketan Kumar Chokkara** · Solo · AI Engineer & Data Scientist  
+**Ketan Chokkara** · Solo · AI Engineer & Data Scientist  
 Toggle Wars 2026 · Track 1: Test Something Real · [github.com/CodeUltr0n/FlagIQ](https://github.com/CodeUltr0n/FlagIQ)
