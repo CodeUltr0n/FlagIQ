@@ -21,7 +21,7 @@ FlagIQ is an **evidence-driven experimentation and safety-gating platform** for 
 ## Judge Quick-Start (30-Second Review)
 
 - **Live Deployed App URL:** https://flagiq-f0rn.onrender.com *(Live Flagsmith Cloud routing on Tab 1 + full 379-issue `ROLLBACK_SAFETY`, 5-fold LOO, and experimental validity results on Tabs 2 & 3)*
-- **3-Minute Demo Video URL:** *Pending YouTube unlisted upload*
+- **3-Minute Demo Video URL:** https://youtu.be/jXqwvGf9hE0
 
 ### 3-Command Local Verification
 ```bash
