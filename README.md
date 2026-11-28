@@ -12,7 +12,7 @@ FlagIQ is an **evidence-driven experimentation and safety-gating platform** for 
 
 - **Headline Finding (`ROLLBACK_SAFETY`):** `clarify_first` wins primary accuracy (`30.5%` vs `20.6%`, `P = 98.6%` local), **yet FlagIQ blocks deployment** because both policies violate the pre-registered `20%` `false_answer` limit (`54.2%` / `67.2%`) and fail all `5` Leave-One-Repo-Out folds.
 
-- **Why Deterministic Scoring First:** Zero-LLM heuristics ([flagiq/decision.py](flagiq/decision.py)) eliminate stochastic LLM drift so accuracy differences isolate the Flagsmith-assigned policy thresholds cleanly — ready to wrap LLM prompts next.
+- **Why Deterministic Baseline + Flagsmith Control Plane:** Zero-LLM heuristics ([flagiq/decision.py](flagiq/decision.py)) remove LLM stochasticity, while paired counterfactuals (`--local-preview`) carry more statistical power on static replay without split variance; Flagsmith serves as the live runtime control plane (dynamic routing, `$flag_exposure`, conversion tracking, instant rollback). Swapping in an LLM arm is an architectural seam, **not yet implemented or tested**.
 
 - **Try Live:** [flagiq-f0rn.onrender.com](https://flagiq-f0rn.onrender.com) (full 379-issue dashboard live on all 3 tabs) · [MIT License](LICENSE)
 
@@ -120,9 +120,9 @@ Flagsmith controls experiment assignment and captures exposure and conversion ev
 
 Before interpreting the experiment numbers below, note four structural boundaries of this evaluation:
 
-1. **Imperfect Ground Truth (50-Ticket Human Audit):** Automated benchmark labels are derived deterministically from historical GitHub issue metadata and resolution signals. A stratified 50-ticket human audit (sampled by [`scripts/scrape_github_issues.py`](scripts/scrape_github_issues.py)) found **`42/50` (`84%`) strict agreement overall** (`ESCALATE`: `36/37`, `DUPLICATE`: `3/3`), with weak precision in **`ANSWER` (`3/10` strictly confirmed)**. Results must be interpreted as provisional, particularly for `ANSWER` decisions.
+1. **Imperfect Single-Rater Ground Truth (50-Ticket Human Audit):** Automated benchmark labels are derived deterministically from historical GitHub issue metadata and resolution signals. A stratified 50-ticket human audit (sampled by [`scripts/scrape_github_issues.py`](scripts/scrape_github_issues.py)) conducted by **one rater unblinded to the automated labels** found **`42/50` (`84%`) strict agreement overall** (`ESCALATE`: `36/37`, `DUPLICATE`: `3/3`, **`ANSWER`: `3/10`**) — treating `36/37` as an upper bound pending multi-rater IRR. Primary `decision_correct` inherits `ANSWER` uncertainty, making the `ROLLBACK_SAFETY` verdict (driven by `ESCALATE` errors) the stronger claim.
 2. **Mutable GitHub Issue Bodies:** GitHub's REST `/issues` endpoint returns the latest edited issue `body` rather than an immutable creation-time snapshot (`audit_sample_50.json` tracks `body_edit_marker` hints for manual inspection).
-3. **Historical Replay ≠ Prospective Live Users:** All **`379` screened historical GitHub issues** (from a `400`-issue target after excluding **`447`** ambiguous/bot/stale/`not_planned` issues) are historical tickets replayed deterministically through Flagsmith — **not** 379 live end-users. Offline `--local-preview` runs are counterfactual comparisons, not live paired-user experiments.
+3. **Historical Replay vs. Paired Power & Live Users:** All **`379` screened historical GitHub issues** (from a `400`-issue target after excluding **`447`** ambiguous/bot/stale/`not_planned` issues) are historical tickets, **not** 379 live end-users. On a deterministic scorer replaying fixed issues, paired `--local-preview` evaluation (`21.4%` vs `29.3%`, `88/379` disagreements) has strictly higher statistical power without 189-vs-190 allocation noise; Flagsmith A/B is used here as the **runtime experimentation and telemetry control plane** required by Toggle Wars and future live/LLM arms (untested today).
 4. **Statistical Winner ≠ Deployment Eligibility:** Passing all six pipeline validity checks guarantees causal hygiene (no post-close leakage, balanced covariates, temporal isolation), not ground-truth perfection — and winning on primary accuracy (`decision_correct`) never overrides operational error caps (`max_false_answer_rate = 20%` in [`config/policy.yaml`](config/policy.yaml)).
 
 ---
@@ -163,11 +163,21 @@ FlagIQ puts **fast-deflection (`answer_first`)** and **evidence-gated (`clarify_
 
 1. **Statistical Accuracy Winner — `clarify_first` (`30.5%` vs `20.6%`):**
    - Local Beta-Binomial **`P(clarify_first > answer_first) = 98.6%`** (`+9.9pp`, `+47.9%` relative lift; 95% per-arm accuracy CIs `[15.4%, 26.9%]` vs `[24.4%, 37.4%]` via [`flagiq/bayesian.py#L63`](flagiq/bayesian.py#L63)).
-   - *CI Note:* Flagsmith Cloud's wider 95% interval (`[-4.6%, 96.9%]` / `[-7.6%, 91.2%]`) bounds **relative lift percentage**, whereas FlagIQ's narrower intervals above bound **individual arm accuracy proportions** — they measure two different quantities.
+   - *CI Note:* Flagsmith Cloud's wider 95% interval (`[-4.6%, 96.9%]` / `[-7.6%, 91.2%]`) bounds **relative lift percentage**, whereas FlagIQ's narrower intervals (`[15.4%, 26.9%]` vs `[24.4%, 37.4%]`) bound **individual arm accuracy proportions**.
 2. **Modeled Economic Preference — `clarify_first` (`-$12.53` vs `-$15.66`/ticket modeled):**
-   - Net modeled values on the 379-issue benchmark are **`-$2,960` / `189` tickets** (`answer_first`) vs **`-$2,380` / `190` tickets** (`clarify_first`), a `+$3.13/issue` relative margin → **`Projected relative economic advantage: $6,260/month`** at `2,000` issues/month under pre-locked configurable cost assumptions (`$45` FE, `$25` FA, `$15` correct in [`config/policy.yaml`](config/policy.yaml)). Notice both baselines are net-negative in aggregate — **this is a modeled risk-weight comparison, not verified operational savings, and not a deployment recommendation.**
+   - Net modeled values on the 379-issue benchmark are **`-$2,960` / `189` tickets** (`answer_first`) vs **`-$2,380` / `190` tickets** (`clarify_first`), a `+$3.13/issue` relative margin → **`Projected relative economic advantage: $6,260/month`** at `2,000` issues/month under pre-locked configurable cost assumptions (`$45` FE, `$25` FA, `$15` correct in [`config/policy.yaml`](config/policy.yaml)). Notice both baselines lose value in aggregate — **this is a modeled risk-weight comparison, not verified operational savings, and not a deployment recommendation.**
 3. **Actual Safety & Deployment Decision — `ROLLBACK_SAFETY` (`BLOCKED`):**
-   - **Both strategies breach the pre-registered `max_false_answer_rate = 0.20` (`<= 1 in 5`) safety cap** ([`config/policy.yaml#L30`](config/policy.yaml#L30): `clarify_first` **`54.2%`**, `answer_first` **`67.2%`**). Crucially, `false_answer` triggers only when predicting `ANSWER` on a true `ESCALATE` bug ([`flagiq/decision.py#L228`](flagiq/decision.py#L228)) — and **`ESCALATE` achieved `36/37` (`97.3%`) strict confirmation** in our 50-ticket audit — so `ROLLBACK_SAFETY` stands solidly even with weaker `ANSWER` precision (`3/10`).
+   - **Both strategies breach the pre-registered `max_false_answer_rate = 0.20` (`<= 1 in 5`) safety cap** ([`config/policy.yaml#L30`](config/policy.yaml#L30): `clarify_first` **`54.2%`**, `answer_first` **`67.2%`**). Because `false_answer` checks `decision == "ANSWER" and real_resolution == "ESCALATE"` ([`flagiq/decision.py#L228`](flagiq/decision.py#L228)), `ROLLBACK_SAFETY` is grounded primarily in the `36/37`-confirmed `ESCALATE` class rather than `ANSWER`.
+
+#### Trivial-Baseline & Paired Sanity Check (`379` Screened Issues)
+Because `281 / 379` (`74.1%`) screened closed issues are true `ESCALATE` bugs, **neither heuristic clears a zero-effort `"Always Escalate"` baseline** — reinforcing why deployment safety blocks both arms:
+
+| Policy / Run Mode | Accuracy | False Answer Rate | False Escalation Rate | Modeled Net / Issue |
+|---|---|---|---|---|
+| `answer_first` (Flagsmith A/B, `n=189`) | `20.6%` | `67.2%` *(FAIL >20%)* | `2.1%` | `-$15.66` (`-$2,960`) |
+| `clarify_first` (Flagsmith A/B, `n=190`) | `30.5%` | `54.2%` *(FAIL >20%)* | `5.8%` | `-$12.53` (`-$2,380`) |
+| Paired `--local-preview` (`n=379`, `88` diffs) | `21.4%` vs `29.3%` | `68.6%` vs `52.8%` | `1.1%` vs `6.6%` | `-$15.32` vs `-$12.90` |
+| **`Always Escalate` (trivial baseline, `n=379`)** | **`74.1%` (`281/379`)** | **`0.0%` *(PASS)*** | `25.9%` *(< 35% cap)* | **`-$0.51` (`-$195`)** |
 
 ### 3. Independent 5-Fold Leave-One-Repo-Out (LOO) Evaluation (`FAIL`)
 `LOO: 5 folds evaluated independently. Statistical preference is not robust at the configured 90% threshold in every fold. Safety eligibility fails across folds.`
@@ -183,12 +193,12 @@ All **five** repository-exclusion folds independently fail safety eligibility (`
 
 - **Six automated validity checks pass** ([`scripts/validate_experiment.py`](scripts/validate_experiment.py)): consistent identity hashing, covariate balance, blind evaluation (`decision` locked at [`flagiq/decision.py#L196`](flagiq/decision.py#L196) before post-close access at [`L226`](flagiq/decision.py#L226)), confidence blindness, reproducibility, and temporal peer isolation (`peer.created_at < issue.created_at`) + `UNKNOWN` exclusion. **Passing these checks does not imply perfect ground truth.**
 - **50-Ticket Stratified Human Audit Breakdown:** **`42/50` (`84%`) strict agreement overall** — `ESCALATE` **`36/37`**, `DUPLICATE` **`3/3`**, **`ANSWER` `3/10` strictly confirmed**.
-- **Creation-Time Complexity Quartiles (`app.py` Q1–Q4):**
-  - `Q1 (Low Context)`: `answer_first` **`23.3% (n=73)`** vs `clarify_first` **`14.6% (n=96)`** *(reverses overall accuracy ranking: `clarify_first` defaults terse tickets to `CLARIFY` where historical metadata logged `ANSWER`, motivating context-tiered routing rather than one global policy)*
-  - `Q2 (Medium-Low)`: `answer_first` `10.0% (n=10)` vs `clarify_first` `50.0% (n=14)`
+- **Discrete Creation-Time Score Tiers (labeled `Q1–Q4` in UI; effectively 3 populated tiers + empty `Q4`):**
+  - Because `181/379` (`47.8%`) issues tie at the maximum `repro_score = 1.0`, the 75th percentile saturates at `q3 = 1.0` ([`app.py#L202`](app.py#L202)), yielding 3 populated discrete tiers rather than equal-size quartiles (`Q4 = 0`):
+  - `Q1 (Low Context)`: `answer_first` **`23.3% (n=73)`** vs `clarify_first` **`14.6% (n=96)`** *(reverses overall sample ranking, though at `SE = 6.12pp` / `z = 1.42` this subgroup split is **not statistically significant** — treat as an exploratory hypothesis for future context-segmented routing, not proof of an interaction effect)*
+  - `Q2 (Medium-Low)`: `answer_first` `10.0% (n=10)` vs `clarify_first` `50.0% (n=14)` *(small `n`)*
   - `Q3 (Medium-High)`: `answer_first` `19.8% (n=106)` vs `clarify_first` `46.2% (n=80)`
-  - `Q4 (Rich Repro)`: `n/a` (`n = 0`) — discrete creation-time `repro_score` caps at `1.0` and `181/379` (`47.8%`) issues hit `1.0`, saturating the 75th percentile `q3 = 1.0` ([`app.py#L202`](app.py#L202)), so zero issues exceed `q3`.
-  - Overall preference does not hold across every complexity segment.
+  - `Q4 (Rich Repro)`: `n/a` (`n = 0`; no score exceeds `q3 = 1.0`)
 
 <details>
 <summary>Evidence Gallery — All Captured Flagsmith Cloud & FlagIQ Screenshots (assets/)</summary>
