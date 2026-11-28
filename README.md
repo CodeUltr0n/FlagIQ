@@ -4,7 +4,7 @@
 
 FlagIQ is an **evidence-driven experimentation and safety-gating platform** for automated & AI GitHub issue triage built for **Toggle Wars 2026 (WeMakeDevs × Flagsmith, Track 1 — Test Something Real)**.
 
-### TL;DR (15-Second Judge Summary)
+### Too Long; Didn't Read (TL;DR — 15-Second Jury Overview)
 
 - **Problem:** Shipping an automated triage rule or AI policy without proving downstream safety leads to confident wrong answers (`54%+` false-answer rates on real bugs) and wasted engineering time.
 
@@ -251,6 +251,20 @@ bash setup.sh                                         # installs dependencies in
 .venv/bin/python scripts/check_win_probability.py     # 7. Deployment Eligibility Gate & reconciliation
 .venv/bin/python app.py                               # 8. Launch local FlagIQ Web Workbench (:8501)
 ```
+
+---
+
+## Jury Design & Validity Q&A
+
+| Jury Question | Direct Evidence-Backed Answer |
+|---|---|
+| **How do you know `clarify_first` didn't simply receive easier issues?** | [`scripts/validate_experiment.py`](scripts/validate_experiment.py) verifies deterministic Flagsmith hashing, creation-time covariate balance (`complexity 0.746 vs 0.764`, body length, linked PR rate), blind decision locking at [`flagiq/decision.py#L196`](flagiq/decision.py#L196) before post-close fields at [`#L226`](flagiq/decision.py#L226), zero confidence leakage, temporal peer isolation, and `447` `UNKNOWN` exclusions. |
+| **Why does Flagsmith show `95%–96%` win probability while FlagIQ blocks deployment?** | Flagsmith evaluates `decision_correct` conversion lift; FlagIQ applies independent downstream error caps ([`config/policy.yaml#L30`](config/policy.yaml#L30)). Both arms exceed `max_false_answer_rate = 20%` (`54.2%` / `67.2%`), fail all 5 Leave-One-Repo-Out folds, and fail to beat the trivial `Always Escalate` bar (`74.1%`), triggering `ROLLBACK_SAFETY`. |
+| **Is Flagsmith actually essential here, or just a toggle?** | Remove Flagsmith and you lose runtime `triage_strategy` routing, `$flag_exposure` logging, `decision_correct` cohort tracking, isolated UI audit telemetry (`demo_human_approval` at [`app.py#L1417`](app.py#L1417)), and zero-redeploy kill-switches across production rollouts. |
+| **Isn't this just a GitHub classifier or threshold script?** | GitHub issues provide a real, public, machine-readable dataset; the harness itself is domain-agnostic and directly wraps support routing, lead scoring, or moderation pipelines behind `triage_strategy`. |
+| **Why test only two strategies (`answer_first` vs. `clarify_first`)?** | Splitting `379` screened issues 50/50 (`189` vs `190`) clears our `n >= 80/arm` Leave-One-Repo-Out sample floor across all 5 repository folds; a third arm reduces statistical power per cohort (`~126/arm`). |
+| **Why keep `ANSWER` labels if audit confirmed only `3/10`?** | Dropping a noisy class *after* inspecting results is post-hoc p-hacking. Keeping all `379` tickets, disclosing the single-rater audit (`42/50 = 84%` overall), and showing `ROLLBACK_SAFETY` rests on `ESCALATE` misses (`36/37` confirmed at [`flagiq/decision.py#L228`](flagiq/decision.py#L228)) keeps the verdict scientifically honest. |
+| **Why run Flagsmith A/B on static replay when `--local-preview` pairs all 379 issues?** | Paired counterfactuals remove `189`-vs-`190` split variance (`21.4%` vs `29.3%`, `88/379` diffs); Flagsmith runs as the live control plane required for dynamic experimentation and future stochastic LLM prompts (an architectural seam in `run_triage()`, untested today). |
 
 ---
 
