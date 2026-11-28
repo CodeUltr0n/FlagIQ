@@ -501,7 +501,7 @@ HTML_PAGE = """<!DOCTYPE html>
       gap: 1.25rem;
     }
     .card {
-      background: var(--surface);
+      background: var(--surface); min-inline-size: 0;
       border: 1px solid var(--border);
       border-radius: 10px;
       padding: 1.25rem;
@@ -510,7 +510,7 @@ HTML_PAGE = """<!DOCTYPE html>
 
     /* Forms */
     .form-group {
-      display: flex;
+      display: flex; min-inline-size: 0;
       flex-direction: column;
       gap: 0.35rem;
       margin-block-end: 1rem;
@@ -518,14 +518,27 @@ HTML_PAGE = """<!DOCTYPE html>
     label { font-weight: 600; font-size: 0.92rem; }
     .hint { color: var(--muted); font-size: 0.84rem; }
     input:not([type="range"]), textarea, select {
-      font: inherit;
-      font-size: max(1rem, 1em);
+      inline-size: 100%; max-inline-size: 100%; min-inline-size: 0;
+      font: inherit; font-size: max(1rem, 1em);
       padding: 0.65rem 0.75rem;
       min-block-size: 48px;
       border: 1px solid var(--border);
       border-radius: 8px;
       background: var(--bg);
       color: var(--text);
+    }
+    select {
+      appearance: none;
+      text-align: start;
+      padding-inline-end: 2.5rem;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none' stroke='%237d8590' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m4 6 4 4 4-4'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.85rem center;
+      background-size: 16px 16px;
+      cursor: pointer;
     }
     textarea { min-block-size: 120px; resize: vertical; }
     input:user-invalid, textarea:user-invalid { border-color: var(--bad); }
