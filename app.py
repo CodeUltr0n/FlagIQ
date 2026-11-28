@@ -1404,11 +1404,12 @@ class FlagIQHandler(BaseHTTPRequestHandler):
                         fs.track_event("demo_human_approval", identifier=identity)
                     if hasattr(fs, "flush_events"):
                         fs.flush_events()
-                    msg = f"Logged isolated human approval for {identity} (emitted 'demo_human_approval'; benchmark 'decision_correct' untouched)."
+                    msg = f"✓ Recorded isolated approval for {identity}. Flagsmith received 'demo_human_approval', leaving the 'decision_correct' benchmark untouched."
                 except Exception as exc:
-                    msg = f"Logged locally for {identity}; Flagsmith demo event warning: {exc}"
+                    msg = f"Saved locally for {identity} — Flagsmith demo event unavailable ({exc})."
             else:
-                msg = f"Logged isolated human review (approved={correct}) for {identity} in demo_feedback.json (benchmark denominator untouched)."
+                action = "approval" if correct else "override"
+                msg = f"✓ Recorded isolated {action} for {identity} locally. The 'decision_correct' benchmark stays untouched."
             self._send_json(200, {"ok": True, "message": msg})
         else:
             self._send_json(404, {"error": "Not found"})
