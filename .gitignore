@@ -9,14 +9,11 @@ __pycache__/
 dist/
 build/
 
-# Data (don't commit scraped issues — too large)
-fixtures/real_issues/issues.json
-fixtures/real_issues/results.json
-fixtures/real_issues/processed.json
-fixtures/real_issues/excluded_unknown.json
-fixtures/real_issues/audit_sample_50.json
+# Public 379-issue benchmark artifacts stay tracked so Render & fresh clones have full parity.
+# Local run state, calibration temp files, and interactive demo logs stay ignored:
 fixtures/real_issues/calibration_issues.json
 fixtures/real_issues/demo_feedback.json
+fixtures/real_issues/processed.json
 fixtures/real_issues/validity_report.json
 
 # Keep the placeholder

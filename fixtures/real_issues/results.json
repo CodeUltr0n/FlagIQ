@@ -1,0 +1,6431 @@
+[
+  {
+    "identity": "facebook/react#35389",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#35399",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Normalized error signatures: SuspenseException",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1997 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#35402",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#35431",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "CLARIFY",
+    "confidence": 0.25,
+    "real_resolution": "ANSWER",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Detailed report (754 chars)",
+      "Guardrail triggered: refused unverified guess \u2014 requesting repro steps / stack trace"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "facebook/react#35531",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": false,
+    "false_escalation": true,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -45.0
+  },
+  {
+    "identity": "facebook/react#35554",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#35561",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: breaks"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#35569",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": true,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1436 chars)"
+    ],
+    "net_value_usd": -45.0
+  },
+  {
+    "identity": "facebook/react#35570",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#35605",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1373 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#35622",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#35625",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1279 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#35633",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": false,
+    "false_escalation": true,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1934 chars)"
+    ],
+    "net_value_usd": -45.0
+  },
+  {
+    "identity": "facebook/react#35640",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "DUPLICATE",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Similar prior issue facebook/react#35402 (Jaccard 0.70)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "facebook/react#35655",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.85,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: broken"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#35668",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "CLARIFY",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (517 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "facebook/react#35699",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "DUPLICATE",
+    "confidence": 1.0,
+    "real_resolution": "CLARIFY",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (571 chars)",
+      "Question / configuration phrasing detected",
+      "Similar prior issue facebook/react#35668 (Jaccard 0.67)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "facebook/react#35729",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (671 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#35761",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1580 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#35770",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#35771",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1597 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#35772",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1280 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#35774",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1496 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#35821",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#35920",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1402 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#35923",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#35954",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1891 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#35982",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#35984",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "DUPLICATE",
+    "confidence": 0.85,
+    "real_resolution": "ANSWER",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1227 chars)",
+      "Similar prior issue facebook/react#35982 (Jaccard 0.50)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "facebook/react#35997",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "DUPLICATE",
+    "confidence": 0.85,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (974 chars)",
+      "Similar prior issue facebook/react#35982 (Jaccard 0.57)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "facebook/react#36002",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.5,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1011 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#36003",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#36101",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (614 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#36162",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1200 chars)",
+      "Failure signatures: crashes"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#36167",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1795 chars)",
+      "Failure signatures: breaks"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#36200",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1265 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#36232",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#36279",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1942 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#36302",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (321 chars)",
+      "Failure signatures: breaks"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#36331",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#36359",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1428 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#36381",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "CLARIFY",
+    "confidence": 0.25,
+    "real_resolution": "ANSWER",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Brief report (164 chars)",
+      "Guardrail triggered: refused unverified guess \u2014 requesting repro steps / stack trace"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "facebook/react#36400",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Detailed report (202 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#36434",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (864 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#36440",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": false,
+    "false_escalation": true,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: TypeError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1122 chars)",
+      "Failure signatures: crashes, regression, typeerror"
+    ],
+    "net_value_usd": -45.0
+  },
+  {
+    "identity": "facebook/react#36461",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Detailed report (794 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#36525",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1678 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#36548",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.6,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (1999 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#36601",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#36717",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (725 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#36749",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "DUPLICATE",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Similar prior issue facebook/react#35923 (Jaccard 1.00)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "facebook/react#36834",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (1441 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#36858",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "CLARIFY",
+    "confidence": 0.1,
+    "real_resolution": "ANSWER",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Brief report (179 chars)",
+      "Guardrail triggered: refused unverified guess \u2014 requesting repro steps / stack trace"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "facebook/react#36880",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#36890",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (830 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#36919",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: deadlock"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "facebook/react#36922",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#37003",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "DUPLICATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Question / configuration phrasing detected",
+      "Similar prior issue facebook/react#35954 (Jaccard 1.00)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "facebook/react#37103",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": false,
+    "false_escalation": true,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -45.0
+  },
+  {
+    "identity": "facebook/react#37116",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8185",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (1564 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8186",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1418 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8187",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (1999 chars)",
+      "Question / configuration phrasing detected",
+      "Failure signatures: regression"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8188",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.25,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (1215 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8193",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (821 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#37209",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1329 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8228",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (2000 chars)",
+      "Failure signatures: breaks"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8232",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (228 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8233",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (204 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8235",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (1718 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#37240",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#37250",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.25,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Brief report (124 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8256",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (641 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8257",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (483 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8258",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (632 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8264",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (902 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8271",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8280",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (1645 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8300",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (315 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#37309",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1381 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8317",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8319",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1012 chars)",
+      "Question / configuration phrasing detected",
+      "Failure signatures: 500"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8322",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (637 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8327",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (829 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8330",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Detailed report (238 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8337",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1443 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#37337",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#37343",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: RangeError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: failing"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#37361",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: TypeError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1999 chars)",
+      "Failure signatures: fails, typeerror"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8353",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (1229 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8354",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (1110 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8355",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (1005 chars)",
+      "Question / configuration phrasing detected",
+      "Failure signatures: failing"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8361",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1706 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8362",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (830 chars)",
+      "Question / configuration phrasing detected",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8365",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1337 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8368",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.25,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (652 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#37387",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (488 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8394",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "CLARIFY",
+    "confidence": 0.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Minimal context: no stack trace, repro steps, or clear question",
+      "Guardrail triggered: refused unverified guess \u2014 requesting repro steps / stack trace"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8412",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1389 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8427",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (748 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8441",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (654 chars)",
+      "Failure signatures: 500"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8442",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (491 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#37521",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8478",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (535 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#37553",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8498",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (1999 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#37584",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1999 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8511",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": true,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: 500, fails"
+    ],
+    "net_value_usd": -45.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8524",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (339 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8528",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (723 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#37639",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1999 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#98791",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": false,
+    "false_escalation": true,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: ENOENT",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -45.0
+  },
+  {
+    "identity": "vercel/next.js#98802",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1438 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8547",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (830 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8549",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (769 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8554",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "vercel/next.js#98958",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99032",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: TypeError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: fails, typeerror"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "vercel/next.js#99114",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: TypeError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: fails, typeerror"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "facebook/react#37681",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (806 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99149",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99152",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: HTTP 500",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: 500, breaks, fails"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "vercel/next.js#99153",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99157",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.85,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Normalized error signatures: TurbopackInternalError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: panic"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99245",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "vercel/next.js#99288",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99313",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99339",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: TypeError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: fails, typeerror"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "vercel/next.js#99352",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8608",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99424",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8628",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1354 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8629",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1031 chars)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "vercel/next.js#99498",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8635",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Detailed report (457 chars)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "vercel/next.js#99512",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8657",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (523 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99566",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99656",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1318 chars)",
+      "Question / configuration phrasing detected",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8681",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1013 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "vercel/next.js#99742",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1998 chars)",
+      "Question / configuration phrasing detected",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "vercel/next.js#99756",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99766",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "vercel/next.js#99771",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Question / configuration phrasing detected",
+      "Failure signatures: breaks, broken"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "vercel/next.js#99789",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: crashes"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99800",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#37787",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "DUPLICATE",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Similar prior issue facebook/react#36880 (Jaccard 0.71)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "vercel/next.js#99861",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: crashes"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99866",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Normalized error signatures: HTTP 500",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: 500"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99884",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: 500"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99894",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1357 chars)",
+      "Failure signatures: regression"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99897",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99905",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1888 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99915",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1979 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#99970",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: ENOENT",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "vercel/next.js#99993",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: 500"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#100055",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8748",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1714 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#100143",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (651 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "vercel/next.js#100151",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "vercel/next.js#100173",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (1996 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8774",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1771 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "vercel/next.js#100221",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1999 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#100293",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#37897",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#37911",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1451 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#37955",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "DUPLICATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Similar prior issue facebook/react#35982 (Jaccard 0.56)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "vercel/next.js#100621",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8838",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1552 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#100666",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: 500, failing, fails"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "vercel/next.js#100670",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#100680",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#37984",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#37994",
+    "repo": "facebook/react",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#100777",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": false,
+    "false_escalation": true,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: TypeError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: crashes, fails, regression"
+    ],
+    "net_value_usd": -45.0
+  },
+  {
+    "identity": "vercel/next.js#100829",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: 500, fails"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8846",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (877 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#100869",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8855",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (508 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#100893",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: regression"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#100959",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#100982",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8865",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "CLARIFY",
+    "confidence": 0.25,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Brief report (167 chars)",
+      "Guardrail triggered: refused unverified guess \u2014 requesting repro steps / stack trace"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "vercel/next.js#101083",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8867",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1269 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#101120",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: breaks"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#101124",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1983 chars)",
+      "Failure signatures: broken"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161295",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.6,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (827 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#101136",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161311",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (2000 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161316",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "CLARIFY",
+    "confidence": 0.0,
+    "real_resolution": "CLARIFY",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Minimal context: no stack trace, repro steps, or clear question"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161336",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Normalized error signatures: ConnectionRefusedError",
+      "Code block or stack trace present",
+      "Detailed report (1992 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161353",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (387 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161354",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Normalized error signatures: AssertionError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1993 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161364",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1622 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161366",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (832 chars)",
+      "Failure signatures: deadlock"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161367",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.25,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Brief report (158 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161383",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "python/cpython#161387",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Normalized error signatures: TypeError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (698 chars)",
+      "Failure signatures: crashes, typeerror"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161388",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Normalized error signatures: RuntimeError, SIGSEGV",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (640 chars)",
+      "Failure signatures: crashes, runtimeerror"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161389",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: ValueError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (581 chars)",
+      "Failure signatures: crashes, valueerror"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "vercel/next.js#101192",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: SyntaxError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: breaks"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "python/cpython#161407",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: crash, crashes"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161414",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: ValueError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (948 chars)",
+      "Question / configuration phrasing detected",
+      "Failure signatures: fails, valueerror"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161415",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1123 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161419",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (749 chars)",
+      "Failure signatures: crash, crashes"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161420",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1999 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161428",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161430",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1996 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161433",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Normalized error signatures: TypeError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: typeerror"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161434",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.85,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8889",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.5,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (677 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161452",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: ValueError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1229 chars)",
+      "Failure signatures: valueerror"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161458",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.25,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (454 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161467",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1999 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161475",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (948 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161477",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (777 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161490",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "CLARIFY",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Detailed report (335 chars)",
+      "Failure signatures: failing",
+      "Guardrail triggered: refused unverified guess \u2014 requesting repro steps / stack trace"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "python/cpython#161492",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (526 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161502",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1984 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161517",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (849 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161555",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (460 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161563",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": true,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: FileNotFoundError, ImportError, IsADirectoryError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1482 chars)"
+    ],
+    "net_value_usd": -45.0
+  },
+  {
+    "identity": "python/cpython#161571",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (1121 chars)",
+      "Failure signatures: crash, crashes"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8901",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": true,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: HTTP 500, KeyError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1942 chars)",
+      "Failure signatures: 500, fails, keyerror"
+    ],
+    "net_value_usd": -45.0
+  },
+  {
+    "identity": "vercel/next.js#101377",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: TypeError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1998 chars)",
+      "Failure signatures: fails, typeerror"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161602",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: AssertionError, ImportError",
+      "Code block or stack trace present",
+      "Detailed report (1432 chars)",
+      "Failure signatures: failing"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161609",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: ProcessLookupError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: crash"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161617",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "DUPLICATE",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Detailed report (252 chars)",
+      "Similar prior issue python/cpython#161602 (Jaccard 0.67)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "python/cpython#161623",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: GetLastError, OSError, WinError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "python/cpython#161625",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Question / configuration phrasing detected",
+      "Failure signatures: 500"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161634",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": true,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: AssertionError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1117 chars)",
+      "Question / configuration phrasing detected",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -45.0
+  },
+  {
+    "identity": "python/cpython#161660",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "DUPLICATE",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (612 chars)",
+      "Similar prior issue python/cpython#161602 (Jaccard 0.67)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "python/cpython#161693",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Normalized error signatures: SIGSEGV",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1859 chars)",
+      "Failure signatures: crash, crashes"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161712",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161724",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (910 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161735",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1960 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161739",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: ValueError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1703 chars)",
+      "Failure signatures: fails, valueerror"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "vercel/next.js#101501",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161746",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1999 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161751",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1998 chars)",
+      "Failure signatures: crash"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161763",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (777 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161767",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (817 chars)",
+      "Failure signatures: crash, crashes, fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161788",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: TypeError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1093 chars)",
+      "Failure signatures: fails, typeerror"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161792",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1453 chars)",
+      "Failure signatures: crash"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161808",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: KeyError, SyntaxError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1961 chars)",
+      "Failure signatures: keyerror"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161821",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (482 chars)",
+      "Question / configuration phrasing detected",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161827",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161840",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: KeyError, ValueError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (906 chars)",
+      "Failure signatures: keyerror, valueerror"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161848",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (919 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161863",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: SystemError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1081 chars)",
+      "Failure signatures: crash"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161875",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (1052 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161892",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "CLARIFY",
+    "confidence": 0.0,
+    "real_resolution": "CLARIFY",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Minimal context: no stack trace, repro steps, or clear question",
+      "Guardrail triggered: refused unverified guess \u2014 requesting repro steps / stack trace"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161932",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Normalized error signatures: SSLError",
+      "Code block or stack trace present",
+      "Detailed report (2000 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161945",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161968",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: TypeError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1871 chars)",
+      "Failure signatures: typeerror"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161974",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "CLARIFY",
+    "confidence": 0.0,
+    "real_resolution": "CLARIFY",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Minimal context: no stack trace, repro steps, or clear question",
+      "Guardrail triggered: refused unverified guess \u2014 requesting repro steps / stack trace"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161987",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: ValueError",
+      "Code block or stack trace present",
+      "Detailed report (1072 chars)",
+      "Failure signatures: breaks, valueerror"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#161996",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Normalized error signatures: MyError, ValueError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (772 chars)",
+      "Failure signatures: crash, segfault, valueerror"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#161999",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "vercel/next.js#101805",
+    "repo": "vercel/next.js",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162028",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Normalized error signatures: ValueError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (811 chars)",
+      "Failure signatures: valueerror"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162031",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Normalized error signatures: TypeError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1126 chars)",
+      "Failure signatures: typeerror"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162034",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1510 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162059",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: CancelledError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#162061",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1995 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162085",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1846 chars)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "python/cpython#162091",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1099 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "python/cpython#162092",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Normalized error signatures: AssertionError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1999 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162144",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (2000 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#8992",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (451 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162170",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (718 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162182",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (2000 chars)",
+      "Failure signatures: failing"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#162196",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (865 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "vercel/next.js#101989",
+    "repo": "vercel/next.js",
+    "strategy": "answer_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: TypeError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: failing, fails, typeerror"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#162217",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: CancelledError, InvalidStateError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#162227",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162230",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349132",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: crash"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "microsoft/vscode#349147",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1590 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349154",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1999 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162247",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: EmulatorStartFailedException, ExecutionException",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1794 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#162251",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Normalized error signatures: AssertionError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1602 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349222",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (371 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349229",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (1115 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "facebook/react#38318",
+    "repo": "facebook/react",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1759 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349256",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Normalized error signatures: ENOENT",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349260",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.25,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Brief report (149 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "microsoft/vscode#349266",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (1359 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349267",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": false,
+    "false_escalation": true,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Question / configuration phrasing detected",
+      "Failure signatures: crash, regression"
+    ],
+    "net_value_usd": -45.0
+  },
+  {
+    "identity": "python/cpython#162282",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1433 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349301",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (522 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349307",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "CLARIFY",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Detailed report (1080 chars)",
+      "Guardrail triggered: refused unverified guess \u2014 requesting repro steps / stack trace"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "python/cpython#162285",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1396 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349317",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (854 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349335",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1512 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349353",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162305",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (616 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "microsoft/vscode#349378",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162308",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Question / configuration phrasing detected",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349406",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (501 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349416",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (631 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349455",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (984 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349462",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Detailed report (887 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "microsoft/vscode#349483",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.5,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349486",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349503",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (502 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349519",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (554 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349520",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (375 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349526",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (773 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349533",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "CLARIFY",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Detailed report (1322 chars)",
+      "Guardrail triggered: refused unverified guess \u2014 requesting repro steps / stack trace"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "microsoft/vscode#349543",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "microsoft/vscode#349545",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.5,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1723 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "microsoft/vscode#349553",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1601 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349554",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1805 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162342",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Question / configuration phrasing detected",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162364",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1764 chars)",
+      "Failure signatures: regression"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162365",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: ConnectionResetError, OSError",
+      "Code block or stack trace present",
+      "Detailed report (2000 chars)",
+      "Failure signatures: broken"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "python/cpython#162388",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162395",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "DUPLICATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1319 chars)",
+      "Similar prior issue python/cpython#162061 (Jaccard 0.47)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "python/cpython#162428",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (722 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349684",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1999 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "microsoft/vscode#349691",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1999 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349701",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162467",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1376 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349727",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349740",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: broken"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "microsoft/vscode#349745",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 0.5,
+    "real_resolution": "ANSWER",
+    "correct": false,
+    "false_escalation": true,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: broken, fails"
+    ],
+    "net_value_usd": -45.0
+  },
+  {
+    "identity": "microsoft/vscode#349746",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1999 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162477",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1135 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349763",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1190 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349769",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (237 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349780",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (430 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349783",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (327 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "microsoft/vscode#349797",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349808",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1433 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "microsoft/vscode#349809",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1542 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "microsoft/vscode#349812",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": false,
+    "false_escalation": true,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1397 chars)",
+      "Failure signatures: crash, crashes"
+    ],
+    "net_value_usd": -45.0
+  },
+  {
+    "identity": "microsoft/vscode#349813",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (208 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349816",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1981 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "microsoft/vscode#349840",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1904 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349841",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349854",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.5,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (610 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "microsoft/vscode#349856",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (237 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349876",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (635 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349884",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "microsoft/vscode#349913",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (195 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349927",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.5,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Brief report (137 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349931",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (751 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349953",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: failing, fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349957",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1118 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349959",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1058 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#349971",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Detailed report (286 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#9082",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#350016",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1364 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#350024",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (835 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#350044",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Detailed report (550 chars)"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "microsoft/vscode#350054",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.4,
+    "real_resolution": "ANSWER",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Detailed report (219 chars)"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "flagsmith/flagsmith#9085",
+    "repo": "flagsmith/flagsmith",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#350129",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1160 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#350155",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: crash"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#350177",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1745 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#350178",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (2000 chars)",
+      "Question / configuration phrasing detected"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#350179",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "CLARIFY",
+    "confidence": 0.4,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Detailed report (2000 chars)",
+      "Guardrail triggered: refused unverified guess \u2014 requesting repro steps / stack trace"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "microsoft/vscode#350180",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Detailed report (1999 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#350203",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#350204",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (1999 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#350205",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: regression"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#350250",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (863 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#350275",
+    "repo": "microsoft/vscode",
+    "strategy": "clarify_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (977 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#350288",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (1491 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162606",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (322 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#350379",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 0.65,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: crash"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "microsoft/vscode#350380",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Normalized error signatures: UriError",
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "python/cpython#162622",
+    "repo": "python/cpython",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (529 chars)"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#350394",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "ESCALATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": true,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -25.0
+  },
+  {
+    "identity": "microsoft/vscode#350435",
+    "repo": "microsoft/vscode",
+    "strategy": "answer_first",
+    "decision": "ANSWER",
+    "confidence": 1.0,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: fails"
+    ],
+    "net_value_usd": -10.0
+  },
+  {
+    "identity": "python/cpython#162650",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 0.75,
+    "real_resolution": "ESCALATE",
+    "correct": true,
+    "false_escalation": false,
+    "false_answer": false,
+    "evidence": [
+      "Normalized error signatures: RuntimeError",
+      "Code block or stack trace present",
+      "Detailed report (1179 chars)",
+      "Failure signatures: runtimeerror"
+    ],
+    "net_value_usd": 15.0
+  },
+  {
+    "identity": "python/cpython#162658",
+    "repo": "python/cpython",
+    "strategy": "clarify_first",
+    "decision": "ESCALATE",
+    "confidence": 1.0,
+    "real_resolution": "DUPLICATE",
+    "correct": false,
+    "false_escalation": true,
+    "false_answer": false,
+    "evidence": [
+      "Code block or stack trace present",
+      "Reproduction steps / environment info provided",
+      "Detailed report (2000 chars)",
+      "Failure signatures: crash"
+    ],
+    "net_value_usd": -45.0
+  }
+]

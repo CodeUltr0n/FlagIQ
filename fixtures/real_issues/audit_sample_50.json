@@ -1,0 +1,783 @@
+[
+  {
+    "identity": "facebook/react#35622",
+    "repo": "facebook/react",
+    "url": "https://github.com/facebook/react/issues/35622",
+    "title": "[Compiler Bug]: useRef<HTMLFormElement | null> - Error: This value cannot be modified",
+    "labels": [
+      "Type: Bug",
+      "Status: Unconfirmed"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": false,
+    "assigned_ground_truth": "ANSWER",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "facebook/react#36381",
+    "repo": "facebook/react",
+    "url": "https://github.com/facebook/react/issues/36381",
+    "title": "Security auth boundary test - authorized research",
+    "labels": [],
+    "state_reason": "completed",
+    "has_linked_pr": false,
+    "assigned_ground_truth": "ANSWER",
+    "body_edit_marker": false,
+    "human_verified_correct": false,
+    "audit_note": "Bug-bounty auth test issue, not an answered user question (should be UNKNOWN)"
+  },
+  {
+    "identity": "facebook/react#35984",
+    "repo": "facebook/react",
+    "url": "https://github.com/facebook/react/issues/35984",
+    "title": "Bug: react-hooks/static-components false positive",
+    "labels": [
+      "Status: Unconfirmed"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": false,
+    "assigned_ground_truth": "ANSWER",
+    "body_edit_marker": false,
+    "human_verified_correct": false,
+    "audit_note": "Comment only contains external A2ABench bot link without maintainer resolution (uncertain)"
+  },
+  {
+    "identity": "facebook/react#35770",
+    "repo": "facebook/react",
+    "url": "https://github.com/facebook/react/issues/35770",
+    "title": "[Compiler Bug]: react-compiler-runtime missing makeReadOnly/shouldInstrument/useContext_withSelector",
+    "labels": [
+      "Type: Bug",
+      "Status: Unconfirmed"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": false,
+    "assigned_ground_truth": "ANSWER",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "facebook/react#36434",
+    "repo": "facebook/react",
+    "url": "https://github.com/facebook/react/issues/36434",
+    "title": "\u200b[DevTools Bug]: Draggable divider fails to resize panes in shell index.html",
+    "labels": [
+      "Type: Bug",
+      "Status: Unconfirmed",
+      "Component: Developer Tools"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": false,
+    "assigned_ground_truth": "ANSWER",
+    "body_edit_marker": false,
+    "human_verified_correct": false,
+    "audit_note": "Closed due to devtools shell refactor, not answered question (should be ESCALATE/UNKNOWN)"
+  },
+  {
+    "identity": "facebook/react#35399",
+    "repo": "facebook/react",
+    "url": "https://github.com/facebook/react/issues/35399",
+    "title": "Bug: resolveLazy catching promises causes race condition with short-lived Suspense-wrapped components",
+    "labels": [
+      "Status: Unconfirmed"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "facebook/react#36525",
+    "repo": "facebook/react",
+    "url": "https://github.com/facebook/react/issues/36525",
+    "title": "[DevTools Bug]: Profiler's \"What changed\" context becomes unusable when inspecting commits with long render histories",
+    "labels": [
+      "Type: Bug",
+      "Status: Unconfirmed",
+      "Component: Developer Tools"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "facebook/react#37984",
+    "repo": "facebook/react",
+    "url": "https://github.com/facebook/react/issues/37984",
+    "title": "Bug: onTransitionRun, onTransitionStart, and onTransitionCancel do not receive SyntheticTransitionEvent (missing propertyName, elapsedTime, pseudoElement)",
+    "labels": [
+      "Status: Unconfirmed"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "facebook/react#35821",
+    "repo": "facebook/react",
+    "url": "https://github.com/facebook/react/issues/35821",
+    "title": "Bug: useDeferredValue gets stuck with a stale value",
+    "labels": [
+      "Type: Bug",
+      "Component: Suspense"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "facebook/react#35771",
+    "repo": "facebook/react",
+    "url": "https://github.com/facebook/react/issues/35771",
+    "title": "Bug: <Activity /> does not behave as described in the official documentation.",
+    "labels": [
+      "Status: Unconfirmed"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "flagsmith/flagsmith#8232",
+    "repo": "flagsmith/flagsmith",
+    "url": "https://github.com/flagsmith/flagsmith/issues/8232",
+    "title": "Epic: Expose 'Reasons' for Flag evaluations",
+    "labels": [],
+    "state_reason": "completed",
+    "has_linked_pr": false,
+    "assigned_ground_truth": "ANSWER",
+    "body_edit_marker": false,
+    "human_verified_correct": false,
+    "audit_note": "Internal epic closed after internal automation replaced community PRs (should be UNKNOWN)"
+  },
+  {
+    "identity": "flagsmith/flagsmith#8635",
+    "repo": "flagsmith/flagsmith",
+    "url": "https://github.com/flagsmith/flagsmith/issues/8635",
+    "title": "System segments can be edited with user segment endpoints",
+    "labels": [],
+    "state_reason": "duplicate",
+    "has_linked_pr": false,
+    "assigned_ground_truth": "DUPLICATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "flagsmith/flagsmith#8362",
+    "repo": "flagsmith/flagsmith",
+    "url": "https://github.com/flagsmith/flagsmith/issues/8362",
+    "title": "Break usage down by project and environment",
+    "labels": [
+      "front-end"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "flagsmith/flagsmith#9082",
+    "repo": "flagsmith/flagsmith",
+    "url": "https://github.com/flagsmith/flagsmith/issues/9082",
+    "title": "View Docs link on the Create Organisation page renders grey in dark mode",
+    "labels": [],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "flagsmith/flagsmith#8233",
+    "repo": "flagsmith/flagsmith",
+    "url": "https://github.com/flagsmith/flagsmith/issues/8233",
+    "title": "Surface engine reasons in the SDK API requests",
+    "labels": [],
+    "state_reason": "not_planned",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": false,
+    "audit_note": "not_planned issue migrated to ENG-653 despite Edge PR timeline link (borderline UNKNOWN)"
+  },
+  {
+    "identity": "flagsmith/flagsmith#8257",
+    "repo": "flagsmith/flagsmith",
+    "url": "https://github.com/flagsmith/flagsmith/issues/8257",
+    "title": "Return the current billing period with subscription metadata",
+    "labels": [
+      "api"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "flagsmith/flagsmith#8394",
+    "repo": "flagsmith/flagsmith",
+    "url": "https://github.com/flagsmith/flagsmith/issues/8394",
+    "title": "Spike: Dependent flags",
+    "labels": [],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "flagsmith/flagsmith#8322",
+    "repo": "flagsmith/flagsmith",
+    "url": "https://github.com/flagsmith/flagsmith/issues/8322",
+    "title": "First evaluation never reported for compressed environment documents",
+    "labels": [
+      "api"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "flagsmith/flagsmith#8228",
+    "repo": "flagsmith/flagsmith",
+    "url": "https://github.com/flagsmith/flagsmith/issues/8228",
+    "title": "Slow DB Query: org permission check takes ~2.6s on GET /organisations/{id}/groups/",
+    "labels": [],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "microsoft/vscode#349462",
+    "repo": "microsoft/vscode",
+    "url": "https://github.com/microsoft/vscode/issues/349462",
+    "title": "Test: Agents title-bar icon setting",
+    "labels": [
+      "testplan-item"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": false,
+    "assigned_ground_truth": "ANSWER",
+    "body_edit_marker": false,
+    "human_verified_correct": false,
+    "audit_note": "Internal testplan-item checklist with maintainer review question, not user Q&A (should be UNKNOWN)"
+  },
+  {
+    "identity": "microsoft/vscode#349854",
+    "repo": "microsoft/vscode",
+    "url": "https://github.com/microsoft/vscode/issues/349854",
+    "title": "default ai model problem",
+    "labels": [
+      "info-needed"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": false,
+    "assigned_ground_truth": "ANSWER",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "microsoft/vscode#350379",
+    "repo": "microsoft/vscode",
+    "url": "https://github.com/microsoft/vscode/issues/350379",
+    "title": "Multi select dialog for Add Folder to Workspace",
+    "labels": [],
+    "state_reason": "duplicate",
+    "has_linked_pr": false,
+    "assigned_ground_truth": "DUPLICATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "microsoft/vscode#349856",
+    "repo": "microsoft/vscode",
+    "url": "https://github.com/microsoft/vscode/issues/349856",
+    "title": "`sessions.list.canvasesSection` omitted from the Agents window\u2019s settings registration",
+    "labels": [
+      "bug",
+      "canvases"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "microsoft/vscode#349701",
+    "repo": "microsoft/vscode",
+    "url": "https://github.com/microsoft/vscode/issues/349701",
+    "title": "Agents window: Move to Session takes 0.4\u20130.8 s before the sessions list updates",
+    "labels": [
+      "perf",
+      "agents-window"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "microsoft/vscode#349780",
+    "repo": "microsoft/vscode",
+    "url": "https://github.com/microsoft/vscode/issues/349780",
+    "title": "Remote Environments: Connecting to WSL distro only works when the distro is already open",
+    "labels": [
+      "bug",
+      "remote",
+      "agent-host"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "microsoft/vscode#350177",
+    "repo": "microsoft/vscode",
+    "url": "https://github.com/microsoft/vscode/issues/350177",
+    "title": "Agent host checkpoint resolves the baseline and parent refs twice every turn",
+    "labels": [
+      "perf",
+      "agents-window"
+    ],
+    "state_reason": "not_planned",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "microsoft/vscode#349953",
+    "repo": "microsoft/vscode",
+    "url": "https://github.com/microsoft/vscode/issues/349953",
+    "title": "Agents window: send_remote_message stops for good after 50 sends per window lifetime; only a window reload resets it",
+    "labels": [
+      "bug",
+      "on-testplan",
+      "agents-window",
+      "agent-host",
+      "remote-session-tools"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "microsoft/vscode#350016",
+    "repo": "microsoft/vscode",
+    "url": "https://github.com/microsoft/vscode/issues/350016",
+    "title": "Chat input: `@` file suggestions close when you type `-` or `.` in agent host chats",
+    "labels": [
+      "bug",
+      "regression",
+      "chat-input",
+      "agent-host"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "microsoft/vscode#349959",
+    "repo": "microsoft/vscode",
+    "url": "https://github.com/microsoft/vscode/issues/349959",
+    "title": "Chat input: `@` and `#` suggestions don't come back after Backspace",
+    "labels": [
+      "bug",
+      "chat-input"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "microsoft/vscode#349769",
+    "repo": "microsoft/vscode",
+    "url": "https://github.com/microsoft/vscode/issues/349769",
+    "title": "Remote Enviroments: Show the Show/Hide state",
+    "labels": [
+      "bug",
+      "remote",
+      "agents-window"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "python/cpython#161999",
+    "repo": "python/cpython",
+    "url": "https://github.com/python/cpython/issues/161999",
+    "title": "Free-threaded: pages freed by other threads are not returned while the owning thread is idle (and the default purge delay keeps them after it exits)",
+    "labels": [
+      "type-bug",
+      "topic-free-threading"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": false,
+    "assigned_ground_truth": "ANSWER",
+    "body_edit_marker": false,
+    "human_verified_correct": false,
+    "audit_note": "Maintainer noted duplicate of #158972 in comment without duplicate label (should be DUPLICATE)"
+  },
+  {
+    "identity": "python/cpython#161623",
+    "repo": "python/cpython",
+    "url": "https://github.com/python/cpython/issues/161623",
+    "title": "Backport gh-144248 to 3.14: pyrepl on Windows loops forever printing tracebacks when stdin is the NUL device",
+    "labels": [],
+    "state_reason": "duplicate",
+    "has_linked_pr": false,
+    "assigned_ground_truth": "DUPLICATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "python/cpython#161660",
+    "repo": "python/cpython",
+    "url": "https://github.com/python/cpython/issues/161660",
+    "title": "Enable `test_json` to pass with `PYTHON_LAZY_IMPORTS=all`",
+    "labels": [
+      "type-bug",
+      "tests"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "python/cpython#161389",
+    "repo": "python/cpython",
+    "url": "https://github.com/python/cpython/issues/161389",
+    "title": "decimal: `Context(traps=...)` dereferences a SignalDict's NULL `flags` pointer",
+    "labels": [
+      "extension-modules",
+      "type-crash"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "python/cpython#161751",
+    "repo": "python/cpython",
+    "url": "https://github.com/python/cpython/issues/161751",
+    "title": "Free-threaded GC can abort during concurrent subinterpreter teardown",
+    "labels": [
+      "interpreter-core",
+      "type-crash",
+      "topic-free-threading"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "python/cpython#161458",
+    "repo": "python/cpython",
+    "url": "https://github.com/python/cpython/issues/161458",
+    "title": "Centralize I/O tests",
+    "labels": [
+      "tests",
+      "topic-IO",
+      "type-refactor"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "python/cpython#161336",
+    "repo": "python/cpython",
+    "url": "https://github.com/python/cpython/issues/161336",
+    "title": "test_imaplib failed with ConnectionRefusedError on AMD64 FreeBSD Refleaks 3.15 buildbot",
+    "labels": [
+      "type-bug",
+      "tests"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "python/cpython#162622",
+    "repo": "python/cpython",
+    "url": "https://github.com/python/cpython/issues/162622",
+    "title": "ast.unparse can emit invalid syntax for literal braces in format specifiers",
+    "labels": [
+      "type-bug",
+      "stdlib"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "python/cpython#161467",
+    "repo": "python/cpython",
+    "url": "https://github.com/python/cpython/issues/161467",
+    "title": "The hot attribute is not enabled when building CPython with Clang's default configuration",
+    "labels": [
+      "type-feature",
+      "performance",
+      "build"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "python/cpython#162282",
+    "repo": "python/cpython",
+    "url": "https://github.com/python/cpython/issues/162282",
+    "title": "urllib.robotparser.RobotFileParser.parse() is quadratic in repeated identical \"User-agent:\" lines",
+    "labels": [
+      "type-bug",
+      "performance",
+      "stdlib"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "python/cpython#161490",
+    "repo": "python/cpython",
+    "url": "https://github.com/python/cpython/issues/161490",
+    "title": "`test_typing` leaks a reference in buildbots",
+    "labels": [
+      "type-bug",
+      "tests",
+      "topic-typing"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "python/cpython#161477",
+    "repo": "python/cpython",
+    "url": "https://github.com/python/cpython/issues/161477",
+    "title": "idlelib: stray comma makes `__repr__` format a one-element tuple",
+    "labels": [
+      "type-bug",
+      "stdlib",
+      "topic-IDLE"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "python/cpython#161735",
+    "repo": "python/cpython",
+    "url": "https://github.com/python/cpython/issues/161735",
+    "title": "Windows: update zlib-ng to 2.2.5 (PGO builds with Visual Studio 17.11 decompress wrongly on AVX-512 CPUs)",
+    "labels": [
+      "type-bug",
+      "OS-windows",
+      "build"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "vercel/next.js#101136",
+    "repo": "vercel/next.js",
+    "url": "https://github.com/vercel/next.js/issues/101136",
+    "title": "next start: revalidatePath/revalidateTag take effect late when the wall clock runs ahead of the monotonic clock (tag expiry stamped with Date.now(), checked against performance.now())",
+    "labels": [
+      "Runtime",
+      "locked",
+      "Server Actions",
+      "Route Handlers"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": false,
+    "assigned_ground_truth": "ANSWER",
+    "body_edit_marker": false,
+    "human_verified_correct": false,
+    "audit_note": "Confirmed fixed by unlinked PR #100357 in canary comment (should be ESCALATE)"
+  },
+  {
+    "identity": "vercel/next.js#99771",
+    "repo": "vercel/next.js",
+    "url": "https://github.com/vercel/next.js/issues/99771",
+    "title": "`@next/codemod agents-md`: docs `root` is relative to the cwd, not to the `--output` file (breaks monorepos)",
+    "labels": [
+      "bug",
+      "locked"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "vercel/next.js#99800",
+    "repo": "vercel/next.js",
+    "url": "https://github.com/vercel/next.js/issues/99800",
+    "title": "Next 16.4: turbopackSharedRuntime inlines the bootstrap into the prerendered shell without a nonce, breaking hydration under a nonce CSP (cacheComponents)",
+    "labels": [
+      "locked"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "vercel/next.js#101083",
+    "repo": "vercel/next.js",
+    "url": "https://github.com/vercel/next.js/issues/101083",
+    "title": "Docs: import.meta.glob with base changed its result keys in 16.4 \u2014 breaking change shipped without a changelog note or upgrade guidance",
+    "labels": [
+      "locked"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "vercel/next.js#99157",
+    "repo": "vercel/next.js",
+    "url": "https://github.com/vercel/next.js/issues/99157",
+    "title": "`turbopackAdditionalRoots` can't handle CSS",
+    "labels": [
+      "Turbopack",
+      "locked"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "vercel/next.js#99498",
+    "repo": "vercel/next.js",
+    "url": "https://github.com/vercel/next.js/issues/99498",
+    "title": "revalidateTag in after() skips a second invalidation after the cache refills",
+    "labels": [
+      "locked",
+      "Route Handlers",
+      "After"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  },
+  {
+    "identity": "vercel/next.js#99894",
+    "repo": "vercel/next.js",
+    "url": "https://github.com/vercel/next.js/issues/99894",
+    "title": "Turbopack builds fail for edge route handlers when cacheHandlers is set",
+    "labels": [
+      "Turbopack",
+      "locked"
+    ],
+    "state_reason": "completed",
+    "has_linked_pr": true,
+    "assigned_ground_truth": "ESCALATE",
+    "body_edit_marker": false,
+    "human_verified_correct": true,
+    "audit_note": "Verified against GitHub state_reason/PR/comments"
+  }
+]

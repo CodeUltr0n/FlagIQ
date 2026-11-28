@@ -10,7 +10,7 @@ FlagIQ is an **evidence-driven AI decision strategy A/B testing & guardrail plat
 
 ## Judge Quick-Start (30-Second Review)
 
-- **Live Deployed App URL:** https://flagiq-f0rn.onrender.com *(Tab 1 runs live against Flagsmith Cloud on sample/custom tickets; full 379-issue dataset & locally scraped JSONs live locally via `.venv/bin/python app.py`)*
+- **Live Deployed App URL:** https://flagiq-f0rn.onrender.com *(Live Flagsmith Cloud routing on Tab 1 + full 379-issue `ROLLBACK_SAFETY`, 5-fold LOO, and experimental validity results on Tabs 2 & 3)*
 - **3-Minute Demo Video URL:** *Pending YouTube unlisted upload*
 
 ### 3-Command Local Verification
@@ -19,7 +19,7 @@ bash setup.sh                                    # 1. Create .venv, install requ
 .venv/bin/python scripts/validate_experiment.py  # 2. Prove blind evaluation, zero post-close leakage & temporal guard
 .venv/bin/python app.py                          # 3. Open http://127.0.0.1:8501 & test 1-Click Judge Demo Scenarios
 ```
-*(Fresh clones without scraped `fixtures/real_issues/*.json` evaluate against the 5 built-in sample tickets until you run the scraper and live experiment pipeline below.)*
+*(Repository includes the frozen 379-issue benchmark fixtures, `excluded_unknown.json`, and `audit_sample_50.json` so Render and fresh clones display identical results; run the reproduction pipeline below to re-scrape or rerun from scratch.)*
 
 ### Exact Flagsmith & Code Touchpoints
 | Capability | File & Line | What Happens |
