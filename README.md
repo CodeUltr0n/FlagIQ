@@ -5,11 +5,16 @@
 FlagIQ is an **evidence-driven experimentation and safety-gating platform** for automated & AI GitHub issue triage built for **Toggle Wars 2026 (WeMakeDevs × Flagsmith, Track 1 — Test Something Real)**.
 
 ### TL;DR (15-Second Judge Summary)
+
 - **Problem:** Shipping an automated triage rule or AI policy without proving downstream safety leads to confident wrong answers (`54%+` false-answer rates on real bugs) and wasted engineering time.
+
 - **How Flagsmith Powers It:** Every ticket hits Flagsmith's `triage_strategy` flag (`answer_first` vs. `clarify_first` 50/50 split), logging `$flag_exposure` and `decision_correct` conversions (`379` screened issues + `5` smoke checks = `384` benchmark-run; live UI clicks isolate under `"demo_human_approval"`).
+
 - **Headline Finding (`ROLLBACK_SAFETY`):** `clarify_first` wins primary accuracy (`30.5%` vs `20.6%`, `P = 98.6%` local), **yet FlagIQ blocks deployment** because both policies violate the pre-registered `20%` `false_answer` limit (`54.2%` / `67.2%`) and fail all `5` Leave-One-Repo-Out folds.
-- **Why Deterministic Scoring First:** Zero-LLM heuristics ([`flagiq/decision.py`](flagiq/decision.py)) eliminate stochastic LLM drift so accuracy differences isolate the Flagsmith-assigned policy thresholds cleanly — ready to wrap LLM prompts next.
-- **Try Live:** [`https://flagiq-f0rn.onrender.com`](https://flagiq-f0rn.onrender.com) (full 379-issue dashboard live on all 3 tabs) · [`MIT License`](LICENSE)
+
+- **Why Deterministic Scoring First:** Zero-LLM heuristics ([flagiq/decision.py](flagiq/decision.py)) eliminate stochastic LLM drift so accuracy differences isolate the Flagsmith-assigned policy thresholds cleanly — ready to wrap LLM prompts next.
+
+- **Try Live:** [flagiq-f0rn.onrender.com](https://flagiq-f0rn.onrender.com) (full 379-issue dashboard live on all 3 tabs) · [MIT License](LICENSE)
 
 ---
 
