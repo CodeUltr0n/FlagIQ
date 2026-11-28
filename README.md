@@ -4,7 +4,7 @@
 
 FlagIQ is an **evidence-driven experimentation and safety-gating platform** for automated & AI GitHub issue triage built for **Toggle Wars 2026 (WeMakeDevs × Flagsmith, Track 1 — Test Something Real)**.
 
-### Too Long; Didn't Read (TL;DR — 15-Second Jury Overview)
+### Too Long To Read (15-Second Jury Overview)
 
 - **Problem:** Shipping an automated triage rule or AI policy without proving downstream safety leads to confident wrong answers (`54%+` false-answer rates on real bugs) and wasted engineering time.
 
